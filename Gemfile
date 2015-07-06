@@ -55,4 +55,7 @@ group :test do
 
   # Selenium
   gem 'selenium-webdriver'
+
+  # Faker dados
+  gem 'faker'
 end

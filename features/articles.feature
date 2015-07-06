@@ -10,3 +10,6 @@ Funcionalidade: Articles
   Cenário: Criar um Article
     Quando clicar "New Article"
     E for redirecionado para página de "Create Articles"
+    E preencher o formulário
+    E clicar no botão "Create Article"
+    Então receberei a mensagem "Article was successfully created."
