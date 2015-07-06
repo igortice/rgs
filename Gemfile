@@ -43,3 +43,16 @@ group :development, :test do
   gem 'spring'
 end
 
+group :test do
+  # Rspec methods
+  gem 'rspec-rails'
+
+  # Cucumber
+  gem 'cucumber-rails', :require => false
+
+  # Database clear
+  gem 'database_cleaner'
+
+  # Selenium
+  gem 'selenium-webdriver'
+end
