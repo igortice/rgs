@@ -4,7 +4,7 @@ Dado(/^que estou na página de "(.*?)"$/) do |arg1|
   expect(current_path).to eq "/#{arg1.downcase}"
 end
 
-Quando(/^clicar "(.*?)"$/) do |arg1|
+Quando(/^clicar no link "(.*?)"$/) do |arg1|
   visit current_url.gsub('://', '://dhh:secret@') + '/new'
 
   visit articles_path

@@ -8,7 +8,7 @@ Funcionalidade: Articles
     Dado que estou na página de "Articles"
 
   Cenário: Criar um Article
-    Quando clicar "New Article"
+    Quando clicar no link "New Article"
     E for redirecionado para página de "Create Articles"
     E preencher o formulário
     E clicar no botão "Create Article"
