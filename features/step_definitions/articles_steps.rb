@@ -1,11 +1,13 @@
 Dado(/^que estou na página de "(.*?)"$/) do |arg1|
   visit articles_path
 
-  expect(current_path).to eq "/#{arg1.downcase}"
+  has_content?(arg1)
 end
 
 Quando(/^clicar no link "(.*?)"$/) do |arg1|
-  visit current_url.gsub('://', '://dhh:secret@') + '/new'
+  usuario = 'dhh'
+  senha   = 'secret'
+  visit current_url.gsub('://', "://#{usuario}:#{senha}@") + '/new'
 
   visit articles_path
 
@@ -26,5 +28,5 @@ E(/^clicar no botão "(.*?)"$/) do |arg1|
 end
 
 Então(/^receberei a mensagem "(.*?)"$/) do |arg1|
-  expect(page).to have_content(arg1)
+  has_content?(arg1)
 end
