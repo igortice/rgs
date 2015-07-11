@@ -15,7 +15,7 @@ Quando(/^clicar no link "(.*?)"$/) do |arg1|
 end
 
 E(/^for redirecionado para página de "(.*?)"$/) do |arg1|
-  has_content?('New Article')
+  has_content?(arg1)
 end
 
 E(/^preencher o formulário$/) do
